@@ -88,7 +88,7 @@
 	[Electronics](https://medium.com/tag/electronics?source=post_page-----9ad7c62d46ae---------------electronics-----------------), 
 	[Coding](https://medium.com/tag/coding?source=post_page-----9ad7c62d46ae---------------coding-----------------)
 
-**Comunidad**
+**Legacy/Opensource Projects, Applications and, Libraries**
 
 1. **Interbotics ROS Crawlers** [github repository](https://github.com/Interbotix/interbotix_ros_crawlers). ***ROS2 Humble*** *Compatible*
 	- This repo contains custom ROS packages to control the various types of crawlers sold at [Interbotix](https://www.trossenrobotics.com/). 
@@ -105,9 +105,6 @@
 		- **phantomx_gazebo** [github repository](https://github.com/HumaRobotics/phantomx_gazebo)
 		- **geomagic_touch** [github repository](https://github.com/HumaRobotics/geomagic_touch)
 	- **PhantomX Hexapod Examples Various demos for the PhantomX Hexapod** [github repository](https://github.com/Interbotix/PhantomXHexapodExamples)
-
-**Opensource Apps and Libraries**
-
 1. **hexapod-robot** [github repository](https://github.com/ibarbech/hexapod-robot)
 1. **ROS Hexapod Stack** [github repository](https://github.com/KevinOchs/hexapod_ros/tree/master)
 1. **Syropod High-level Controller** [Github repository](https://github.com/csiro-robotics/syropod_highlevel_controller)
