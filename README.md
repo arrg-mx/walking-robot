@@ -113,4 +113,4 @@
 1. **Hexi** *(project)* [about](https://hexyrobot.wordpress.com/)
 	- [Github repository](https://github.com/mithi/hexy)
 
-
+**Nota:** Pueden usar la siguiente [plantilla](https://github.com/mrg-mex/mrg-plantilla-repositorio) como referencia de cómo empezar a estructurar su repositorio así como una plantilla en Markdown para su reporte.
