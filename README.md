@@ -112,5 +112,17 @@
 	- **Note:** The codebase is largely copied from [Mithi's Bare Minimum Hexapod Robot Simulator 2](https://github.com/mithi/hexapod).
 1. **Hexi** *(project)* [about](https://hexyrobot.wordpress.com/)
 	- [Github repository](https://github.com/mithi/hexy)
+1. **TOPS** *(Traverser of Planar Surfaces) or SPOT backward is a 12DOF quadrupedal robot.*
+	- [project page](https://www.aaedmusa.com/projects/tops)
+ 	- [Hackaday's project page](https://hackaday.io/project/192122-tops)
+  	- CAD, Code, BOM, etc... [Github repository](https://github.com/aaedmusa/TOPS)
+   	- *I Built a Robotic Actuator.......Lets Test it!* [Part 0 - YT video](https://www.youtube.com/watch?v=gxXatMr0LX4)
+   	- *Robot Dog Part 1: Leg Day* [Part 1 - YT video](https://www.youtube.com/watch?v=cqpYpj8EaDY)
+   	- *Robot Dog Part 2: Leg Redesign* [Part 2 - YT video](https://www.youtube.com/watch?v=bdJuIe2igCI)
+   	- *I Built a Robot Dog and Made it Dance* [Part 3 - YT video](https://www.youtube.com/watch?v=VhUvoV5XyRg)
+1. **openDog V3: How I made it Walk** [YT video](https://www.youtube.com/watch?v=eKZIJwJBjEs). By [James Bruton](https://www.youtube.com/@jamesbruton)
+	- *CAD and code* [openDogV3- Github repository](https://github.com/XRobots/openDogV3) 
+
+---
 
 **Nota:** Pueden usar la siguiente [plantilla](https://github.com/mrg-mex/mrg-plantilla-repositorio) como referencia de cómo empezar a estructurar su repositorio así como una plantilla en Markdown para su reporte.
