@@ -80,7 +80,9 @@
 	- **Posted by:** [Mithi](https://medium.com/@mithi?source=post_page-----9ad7c62d46ae--------------------------------)
 	- **Published:** March 30, 2020
 	- **Posted in:** [DataDrivenInvestor](https://medium.datadriveninvestor.com/?source=post_page-----9ad7c62d46ae--------------------------------)
-	- **Source Code:** **Hexapod Kinematics Library** [Github repository](https://github.com/mithi/hexapod-kinematics-library). By [**Mithi Sevilla´s** Github Profile](https://github.com/mithi). Code you can use to solve forward/inverse kinematics and generate walk sequences of hexapod robots. 
+	- **Source Code:**
+ 		- **Mithi's Bare-Minimum Hexapod Robot Simulator 2** [Github repository](https://github.com/mithi/hexapod)
+		- **Hexapod Kinematics Library** [Github repository](https://github.com/mithi/hexapod-kinematics-library). By [**Mithi Sevilla´s** Github Profile](https://github.com/mithi). Code you can use to solve forward/inverse kinematics and generate walk sequences of hexapod robots. 
  	- **Live demo:** <https://hexapod.netlify.app/>
   	- **Hexapod Robot Inverse kinematics Visualizer (with Javascript and React)** [YT video](https://www.youtube.com/watch?v=FxjfTUj2Dk0)
 	- **Tags:** [Robotics](https://medium.com/tag/robotics?source=post_page-----9ad7c62d46ae---------------robotics-----------------), 
