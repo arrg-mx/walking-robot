@@ -8,7 +8,7 @@
 
 ## Desarrollo
 
-- [ ] Documentación y justificación de la configuración del robot.
+- [X ] Documentación y justificación de la configuración del robot.
 - [ ] Planteamiento del modelo cinemático directo de la postura y planteamiento del modelo cinemático inverso de la postura.
 - [ ] Diseño e implementación de un modelo virtual del caminante.
 	- [ ] Modelo de una pierna del robot.
