@@ -11,11 +11,11 @@
 - [X ] Documentación y justificación de la configuración del robot.
 - [ ] Planteamiento del modelo cinemático directo de la postura y planteamiento del modelo cinemático inverso de la postura.
 - [ ] Diseño e implementación de un modelo virtual del caminante.
-	- [ ] Modelo de una pierna del robot.
+	- [X ] Modelo de una pierna del robot.
 	- [ ] Modelo del robot completo.
 - [ ] Realización de las pruebas dentro del modelo virtual y reporte de resultados.
-- [ ] Construcción de un modelo físico del robot.
-	- [ ] Construcción de una pierna del robot.
+- [ X] Construcción de un modelo físico del robot.
+	- [ X] Construcción de una pierna del robot.
 	- [ ] Construcción de la estructura del robot.
 - [ ] Implementación de los resultados en el prototipo físico.
 	- [ ] Prototipo de una pierna.
