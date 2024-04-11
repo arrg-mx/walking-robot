@@ -15,7 +15,7 @@ Introducción a la tarjeta Jetson Nano
 ### Esquemático de la tarjeta (Top y Bottom View)
 
 
-![Descripción de la imagen](/images/picture.jpg)
+![Jetson_Top](/Imágenes/Schematic_Jetson_Top.png)
 
 
 
