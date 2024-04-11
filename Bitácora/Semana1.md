@@ -1,5 +1,5 @@
 # Reporte Semana 1
-Introducción a la tarjeta Jetson Nano
+Introducción a la tarjeta Jetson Nano (11/04/2024)
 
 ## Deberes
 - 1)Añadir imagen a la tarjeta siguiendo en tutorial de la página:
