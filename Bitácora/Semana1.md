@@ -15,8 +15,17 @@ Introducción a la tarjeta Jetson Nano
 ### Esquemático de la tarjeta (Top y Bottom View)
 
 
-![Jetson_Top](/Imágenes/Schematic_Jetson_Top.png)
+![Jetson_Top](/Bitácora/Imágenes/Schematic_Jetson_Top.png)
+![Jetson_Bottom](/Bitácora/Imágenes/Schematic_Jetson_Bottom.png)
 
+### Pinout de [J6] 40-pin Exp Header
+![Jetson_J6](/Bitácora/Imágenes/JETSON_J6.png)
+### Pinout de [J7] Fan Header
+![Jetson_J7](/Bitácora/Imágenes/JETSON_J7.png)
+### Pinout de [J11] Optional Alternate Button Header
+![Jetson_J11](/Bitácora/Imágenes/JETSON_J11.png)
+### Pinout de [J12] Button Header
+![Jetson_J5](/Bitácora/Imágenes/JETSON_J12.png)
 
 
 
