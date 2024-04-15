@@ -34,3 +34,16 @@ Introducción a la tarjeta Jetson Nano
 
 
 ## 3) Documentación de la tarjeta driver para los servomotores
+### Esquemático del driver
+![DRIVER_SERVO](/Bitácora/Imágenes/DRIVER_SERVO.png)
+### Instalación del driver CH340
+Es necesario para detectar el puerto COM
+
+![CH340](/Bitácora/Imágenes/CH340DRIVER.png)
+### Inicializar motores
+ Double-click to open the servo debugging software. Click [Settings]-- [Serial Port Settings] to select the corresponding port number, the baud rate is 115200, and finally click [Open Port].
+
+
+![SERVODEBUG](/Bitácora/Imágenes/Servo_DEBUG.png)
+
+>  FUENTE: http://www.yahboom.net/study/YB-SD15M
