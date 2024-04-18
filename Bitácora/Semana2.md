@@ -3,16 +3,16 @@
 Introducción al driver para los servomotores
 
 ## Deberes
-- 1) Caracterización de los servomotores (ángulos)
+- 1)Caracterización de los servomotores (ángulos)
 
 - 2)Investigación puertos UART RX,TX
 - 3)Investigación librería python smbus2
 - 4)Prueba de ensamble eslabones
 
-##  1) Añadir imagen a la tarjeta 
+##  1) Caracterización de los servomotores (ángulos)
 > **Completado** 
 
-## 2) Documentación Pinout de la tarjeta Jetson
+## 2) Investigación puertos UART RX,TX
 ### Esquemático de la tarjeta (Top y Bottom View)
 
 
@@ -34,7 +34,7 @@ Introducción al driver para los servomotores
 >  FUENTE: https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide#id-.JetsonNano2GBDeveloperKitUserGuidevbatuu_v1.0-Introduction
 
 
-## 3) Documentación de la tarjeta driver para los servomotores
+## 3) Investigación librería python smbus2
 ### Esquemático del driver
 ![DRIVER_SERVO](/Bitácora/Imágenes/DRIVER_SERVO.png)
 ### Instalación del driver CH340
@@ -48,3 +48,4 @@ Es necesario para detectar el puerto COM
 ![SERVODEBUG](/Bitácora/Imágenes/Servo_DEBUG.png)
 
 >  FUENTE: http://www.yahboom.net/study/YB-SD15M
+## 4) Prueba de ensamble eslabones
