@@ -30,6 +30,7 @@ Monitoreo del sistema: El protocolo SMBus también se utiliza para acceder a inf
 Configuración del sistema: Algunos dispositivos pueden ser configurados a través del protocolo SMBus. Por ejemplo, se pueden ajustar parámetros de funcionamiento o activar características específicas de un dispositivo mediante comandos enviados a través del bus SMBus.
 
 > FUENTE: https://pypi.org/project/smbus2/
+> https://www.youtube.com/watch?v=G7aQB6x0LHc
 
 ![CH340](/Bitácora/Imágenes/CH340DRIVER.png)
 ### Inicializar motores
