@@ -32,12 +32,5 @@ Configuración del sistema: Algunos dispositivos pueden ser configurados a trav�
 > FUENTE: https://pypi.org/project/smbus2/
 > https://www.youtube.com/watch?v=G7aQB6x0LHc
 
-![CH340](/Bitácora/Imágenes/CH340DRIVER.png)
-### Inicializar motores
- Double-click to open the servo debugging software. Click [Settings]-- [Serial Port Settings] to select the corresponding port number, the baud rate is 115200, and finally click [Open Port].
-
-
-![SERVODEBUG](/Bitácora/Imágenes/Servo_DEBUG.png)
-
->  FUENTE: http://www.yahboom.net/study/YB-SD15M
 ## 4) Prueba de ensamble eslabones
+
