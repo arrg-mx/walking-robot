@@ -7,5 +7,6 @@ Introducción al driver para los servomotores
  > **Pendiente**
 - 2)Investigación puertos UART RX,TX
 - 3)Investigación librería python smbus2
-- 4)Prueba de ensamble eslabones
+- 4)Modificar eslabón para que tenga mas soporte
+- 5)Realizar pruebas de elemento finito
 
