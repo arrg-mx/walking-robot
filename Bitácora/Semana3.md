@@ -17,6 +17,12 @@ Control de servomotores
     >Se encuentra en la sección Control Course 6.2 JetsonNANO http://www.yahboom.net/study/YB-SD15M 
   
     ##2)Modificar eslabón union cuerpo y femur para que tenga mas soporte
+  ### Pinout de [J12] Button Header
+![UnionCuerpoV2](/Bitácora/Imágenes/UnionCuerpoV2.png)
+
+
+
+
 
     
 
