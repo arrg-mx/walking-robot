@@ -1,5 +1,5 @@
 
-# Reporte Semana 2
+# Reporte Semana 3
 Introducción al driver para los servomotores
 
 ## Deberes
