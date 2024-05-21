@@ -3,13 +3,13 @@
 Control de servomotores
 
 ## Deberes
-- 1)Caracterización de los servomotores (ángulos)
- > **Pendiente**
+- 1)Instalación de Jupyter Notebook
+ > **Para realizar caracterización de los servomotores**
 - 2)Modificar eslabón union cuerpo y femur para que tenga mas soporte
 - 3)Realizar pruebas de elemento finito
 
-  ## 1)Caracterización de los servomotores (ángulos)
-  - Instalar python y jupyter notebook
+  ## 1)Instalación de Jupyter Notebook
+  - Instalar python requerido y jupyter notebook
   - Crear nuevo jupyter notebook
   - Creacion de carpeta donde trabajar el proyecto "HEXAPODJNB"
   - Creación de subcarpeta "PruebasServo"
