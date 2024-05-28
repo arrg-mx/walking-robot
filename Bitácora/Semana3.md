@@ -6,7 +6,7 @@ Control de servomotores
 - 1)Instalación de Jupyter Notebook
  > **Para realizar caracterización de los servomotores**
 - 2)Modificar eslabón union cuerpo y femur para que tenga mas soporte
-- 3)Realizar pruebas de elemento finito
+
 
   ## 1)Instalación de Jupyter Notebook
   - Instalar python requerido y jupyter notebook
