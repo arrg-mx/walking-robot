@@ -7,9 +7,10 @@ Control de servomotores
 
 
   ## 1)Conexion de servo a la tarjeta Jetson
-
-![UnionCuerpoV2](/Bitácora/Imágenes/UnionCuerpoV2.png)
-![UnionCuerpoV2](/Bitácora/Imágenes/UnionCuerpoV2.png)
+### Conexion puerto serie del driver a la Jetson
+![ConexionServoSerial](/Bitácora/Imágenes/WiringServoJetson.png)
+### Pinout Servo
+![PinoutServo](/Bitácora/Imágenes/PinMotorServo.png)
 
 
   
