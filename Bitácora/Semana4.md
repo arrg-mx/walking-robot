@@ -12,7 +12,8 @@ Control de servomotores
 ### Pinout Servo
 ![PinoutServo](/Bitácora/Imágenes/PinMotorServo.png)
 
-
+ -Notas 
+ Tuve que instalar  $ pip3 install pyserial en la terminal de la jetson y ademas agregar en la primera celda del Jupyternotebook !pip install pyserial
   
 
 
