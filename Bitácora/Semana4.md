@@ -38,11 +38,13 @@ Contiene tutoriales para desarrollar un brazo robótico.
   > $ cd bazu_ws
 
   > $ catkin_make
+
 5.Entrar a la carpeta src y crear el paquete description y agregar la libreria rospy
-> $ catkin_create_pkg bazu_description rospy
+  > $ catkin_create_pkg bazu_description rospy
+
 6. Descargar la carpeta de github y copiar los archivos dentro de bazu a nuestra carpeta local de bazu_ws/src
 7. Regresar a la carpeta del espacio de trabajo y hacer un catkin
-> $ catkin_make
+  > $ catkin_make
 
 8. Agregar alias
    >$ cd
