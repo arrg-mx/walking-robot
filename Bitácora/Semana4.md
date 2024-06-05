@@ -5,7 +5,7 @@ Control de servomotores
 ## Deberes
 - 1)Conexion de servo a la tarjeta Jetson
 - 2)Instalación de ROS Noetic en Jetson
-  > Pendiente
+
 
 -3)Instalacion de máquina virtual con ROS Noetic para continuar con la programación.
 
