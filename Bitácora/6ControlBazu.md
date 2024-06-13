@@ -1,5 +1,7 @@
 
 # Reporte Semana 6
+Todo esto se realizó en la máquina virtual 
+> TSR2024-1
 
 
 ## Deberes
