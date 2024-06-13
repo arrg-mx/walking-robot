@@ -17,12 +17,16 @@ En el reporte 4 se realizó la instalación de la carpeta bazu, sin embargo al e
 ![Set Servo ID](/Bitácora/Imágenes/bazuconfig.png)
 
 Ahora para compilar debemos ejecutar
-> 
+> $ catkin_make
+Y refrescar la fuente
+> $ source devel/setup.bash
 
   ## 2)Mover el modelo en RVIZ
 Debemos enviar el mensaje a través del publicador (por consola con ROS), entonces debemos publicar en dos lados, en rviz y en python para que se simule y se muevan los motores en tiempo real. 
 
-![Set Servo ID](/Bitácora/Imágenes/ServoControl.PNG)
+> $ roslaunch bazu position_controller_bazu.launch
+Abrir otra terminal para leer los topicos
+> $ rostopic list
 
 
 
