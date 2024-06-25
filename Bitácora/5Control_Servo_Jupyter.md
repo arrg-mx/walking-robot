@@ -23,7 +23,8 @@
 ![Set Servo ID](/Bitácora/Imágenes/ServoControl.PNG)
 
 
-
+## Orden de los IDs en los motores del hexápodo:
+![Set Servo ID](/Bitácora/Imágenes/OrdenIDs.png)
 
 
 
