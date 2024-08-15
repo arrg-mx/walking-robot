@@ -9,7 +9,7 @@
   ## 1)Asignación de IDs a los servomotores usando python (JNB)
   Control de IDs
 
->  sudo chmod 777 /dev/ttyTHS  
+>  sudo chmod 777 /dev/ttyTHS1  
 > jetson_bus_servo-SetID.ipynb
 
 - 1)Duplicar el archivo original de jetson_bus_servo y cambiarle el nombre para realizar las pruebas del cambio de ID.
