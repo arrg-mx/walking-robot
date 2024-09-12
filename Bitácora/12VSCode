@@ -1,0 +1,25 @@
+#Instalación de VS CODE
+Se uso un script hecho para la Jetson Nano
+> DE LA PAGINA: https://hackmd.io/@YungHuiHsu/H1klNXmk2?utm_source=preview-mode&utm_medium=rec
+
+$ git clone https://github.com/JetsonHacksNano/installVSCode.git
+$ cd installVSCode
+$ ./installVSCode.sh
+$ ./installVSCodeWithPython.sh
+# latest gets the latest stable version
+VERSION=latest
+wget -N -O vscode-linux-deb.arm64.deb https://update.code.visualstudio.com/$VERSION/linux-deb-arm64/stable
+sudo apt install ./vscode-linux-deb.arm64.deb
+
+# Install useful Python packages
+sudo apt-get install python3-pip -y
+# Install a Python linter
+pip3 install pylint
+# Install a Python formatter
+pip3 install black
+
+# Install the Python extension for Visual Studio Code
+# Extension name is ms-python.python
+code --install-extension ms-python.python --force
+
+code
