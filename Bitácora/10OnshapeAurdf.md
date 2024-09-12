@@ -18,4 +18,4 @@ luego obtenemos nuestra API key de Onshape por que onshape to robot la necesita 
 The API key's access key is oHISbRJUvbh6Ia6ao682Nn2z and the secret key is DKSkAOk3KgUVR44pqp5R24mw9GGcATouJtPttQjtDVx7oBNG 
 Please transfer this securely to your application now as you will not be able to display this secret key string again.
 
-Ahora crearemos un archivo que almacene esta API KEY para no tener que recordarla y tambien para que se pueda leer a traves de otros programas. Este earchivo estara dentro del workspace 
+Ahora crearemos un archivo que almacene esta API KEY para no tener que recordarla y tambien para que se pueda leer a traves de otros programas. Este earchivo estara dentro del workspace, dentro de la carpeta src, el archivo se llamara Keys.txt 
