@@ -11,7 +11,7 @@ luego agregamos el repositorio
 
 > sudo apt-get install openscad -y
 
-> sudo apt-get install meshlab .y
+> sudo apt-get install meshlab -y
 
 luego obtenemos nuestra API key de Onshape por que onshape to robot la necesita de esta pag web https://dev-portal.onshape.com/keys:
 
