@@ -1,4 +1,5 @@
 
 #Instalacion de Jupu¿yter Notebook
 
->sudo pip3 install --break-system-packages jupyter
+>sudo apt install jupyter-notebook
+
