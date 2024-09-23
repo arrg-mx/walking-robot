@@ -33,3 +33,32 @@ export ONSHAPE_SECRET_KEY=DKSkAOk3KgUVR44pqp5R24mw9GGcATouJtPttQjtDVx7oBNG
 > despues $ echo ONSHAPE_ACCES_KEY oHISbRJUvbh6Ia6ao682Nn2z
 
 Regresamos a la carpeta source y creamos un paquete
+> ros2 pkg create --build-type ament_cmake hexapodLegC_description --dependencies urdf xacro
+Después dentro de hexapodLegC_description crear las siguientes carpetas
+> mkdir legC
+
+> mkdir legC/config.json
+
+> mkdir launch
+
+> mkdir rviz
+Después configurar en json:
+> {
+"documentId": "7c09b0c31d867776bda81da9", 
+"outputformat" :"urdf",
+"packageName": "hexapodLegC_description/legC",
+"robotName": "hexapod",
+"assemblyName":"ensambleC"
+}
+
+>donde document id viene en la URL de documento y assembly name es el nombre del ensamble en de documento.
+Luego editamos CMakeLists.txt y agregamos las nuevas carpetas
+>pip install numpy==1.24
+
+>ejecutamos dentro de la carpeta de description $ onshape-to-robot legC
+Despues creamos las siguientes carpetas
+>touch launch/legC.launch.py
+
+>touch launch/start_rviz.launch.py
+
+>touch rviz/legC.rviz
