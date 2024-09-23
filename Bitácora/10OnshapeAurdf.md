@@ -64,6 +64,8 @@ Despues creamos las siguientes carpetas
 >touch rviz/legC.rviz
 
 Dentro del archivo legC.launch.py ingresamos el siguiente codigo:
+
+
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
@@ -72,18 +74,17 @@ from launch_ros.actions import Node
 #this is the function launch system will look for
 def generate_launch_description():
 
-    #######DATA INPUT#####
+  #######DATA INPUT#####
     urdf_file = 'robot.urdf'
     #xacro_file = "urdfbot.xacro"
     package_description = "hexapodLegC_description"
 
-    ######DATA INPUT END#####
+  ######DATA INPUT END#####
     print("Fetching URDF ==>")
     robot_desc_path=os.path.join(get_package_share_directory(package_description), "legC",urdf_file)
-
     #Robot State Publisher
 
-    robot_state_publisher_node= Node(
+robot_state_publisher_node= Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         name="robot_state_publisher_node",
@@ -93,11 +94,44 @@ def generate_launch_description():
         output="screen"
     )
 
-    
-
-    #create and return launch description object
+  #create and return launch description object
     return LaunchDescription(
         [
-            robot_state_publisher_node
+        robot_state_publisher_node
         ]
         )
+
+LUEGO en el archivo start_rviz.launch
+
+import os
+
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.substitutions import Command
+from launch_ros.actions import Node
+
+#this is the function launch system will look for
+
+def generate_launch_description():
+    
+  package_description="hexapodLegC_description"
+
+  #RVIZ Configuration
+    rviz_config_dir = 
+   os.path.join(get_package_share_directory(package_description),'rviz','hexapod.rviz')
+
+ rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        output='screen',
+        name='rviz_node',
+        parameters=[{'use_sim_time':True}],
+        arguments=['-d',rviz_config_dir]
+    )
+
+#create and return launch description object
+    return LaunchDescription(
+        [
+            rviz_node
+        ]
+    )
