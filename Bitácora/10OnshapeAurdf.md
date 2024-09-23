@@ -135,3 +135,13 @@ def generate_launch_description():
             rviz_node
         ]
     )
+
+
+FINALMENTE Compilamos desde hexapod_ws
+>source install/setup.bash
+
+>colcon build --packages-select hexapodLegC_description
+
+>source install/setup.bash
+
+>ros2 launch hexapodLegC_description legC.launch.py 
