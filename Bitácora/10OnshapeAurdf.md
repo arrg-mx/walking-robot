@@ -65,41 +65,48 @@ Despues creamos las siguientes carpetas
 
 Dentro del archivo legC.launch.py ingresamos el siguiente codigo:
 
-
 import os
-from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
-#this is the function launch system will look for
+# Función que el sistema de lanzamiento buscará
 def generate_launch_description():
 
-  #######DATA INPUT#####
+    ####### ENTRADAS DE DATOS #####
     urdf_file = 'robot.urdf'
-    #xacro_file = "urdfbot.xacro"
     package_description = "hexapodLegC_description"
 
-  ######DATA INPUT END#####
+    ###### FIN DE ENTRADAS DE DATOS #####
     print("Fetching URDF ==>")
-    robot_desc_path=os.path.join(get_package_share_directory(package_description), "legC",urdf_file)
-    #Robot State Publisher
+    
+    # Ruta correcta al archivo URDF en la carpeta 'src'
+    robot_desc_path = os.path.join(
+        '/home/tsmusr/ROS2Dev/hexapod_ws/src',  # Ruta fija a src
+        package_description, 'legC', urdf_file  # Combinación correcta de directorios
+    )
 
-robot_state_publisher_node= Node(
+    # Verifica si el archivo URDF existe
+    if not os.path.exists(robot_desc_path):
+        raise FileNotFoundError(f"El archivo URDF no se encuentra en la ruta: {robot_desc_path}")
+
+    # Nodo de Robot State Publisher
+    robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         name="robot_state_publisher_node",
-        emulate_tty= True,
-        parameters=[{'use_sim_time':True,
-                     'robot_description':Command(['xacro',robot_desc_path])}],
+        emulate_tty=True,
+        parameters=[{'use_sim_time': True,
+                     'robot_description': open(robot_desc_path).read()}],  # Leer directamente el archivo URDF
         output="screen"
     )
 
-  #create and return launch description object
+    # Crear y devolver el objeto de descripción de lanzamiento
     return LaunchDescription(
         [
-        robot_state_publisher_node
+            robot_state_publisher_node
         ]
-        )
+    )
+
 
 LUEGO en el archivo start_rviz.launch
 
