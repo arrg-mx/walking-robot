@@ -159,8 +159,8 @@ def generate_launch_description():
 FINALMENTE Compilamos desde hexapod_ws
 >source install/setup.bash
 
->colcon build --packages-select hexapodLegC_description
+>colcon build --packages-select hexapod_description
 
 >source install/setup.bash
 
->ros2 launch hexapodLegC_description legC.launch.py 
+>ros2 launch hexapod_description hexapodv1.launch.py 
