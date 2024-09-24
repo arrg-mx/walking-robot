@@ -33,7 +33,7 @@ export ONSHAPE_SECRET_KEY=DKSkAOk3KgUVR44pqp5R24mw9GGcATouJtPttQjtDVx7oBNG
 > despues $ echo ONSHAPE_ACCES_KEY oHISbRJUvbh6Ia6ao682Nn2z
 
 Regresamos a la carpeta source y creamos un paquete
-> ros2 pkg create --build-type ament_cmake hexapodLegC_description --dependencies urdf xacro
+> ros2 pkg create --build-type ament_cmake hexapod_description --dependencies urdf xacro
 
 Después dentro de hexapodLegC_description crear las siguientes carpetas
 > mkdir legC
@@ -47,7 +47,7 @@ Después configurar en json:
 > {
 "documentId": "7c09b0c31d867776bda81da9", 
 "outputformat" :"urdf",
-"packageName": "hexapodLegC_description/legC",
+"packageName": "hexapod_description/hexapodv1",
 "robotName": "hexapod",
 "assemblyName":"ensambleC"
 }
@@ -69,13 +69,13 @@ install(
 
 >ejecutamos dentro de la carpeta de description $ onshape-to-robot legC
 Despues creamos las siguientes carpetas
->touch launch/legC.launch.py
+>touch launch/hexapodv1.launch.py
 
 >touch launch/start_rviz.launch.py
 
->touch rviz/legC.rviz
+>touch rviz/hexapodv1.rviz
 
-Dentro del archivo legC.launch.py ingresamos el siguiente codigo:
+Dentro del archivo hexapodv1.launch.py ingresamos el siguiente codigo:
 
 import os
 from launch import LaunchDescription
@@ -86,7 +86,7 @@ def generate_launch_description():
 
     ####### ENTRADAS DE DATOS #####
     urdf_file = 'robot.urdf'
-    package_description = "hexapodLegC_description"
+    package_description = "hexapod_description"
 
     ###### FIN DE ENTRADAS DE DATOS #####
     print("Fetching URDF ==>")
@@ -94,7 +94,7 @@ def generate_launch_description():
     # Ruta correcta al archivo URDF en la carpeta 'src'
     robot_desc_path = os.path.join(
         '/home/tsmusr/ROS2Dev/hexapod_ws/src',  # Ruta fija a src
-        package_description, 'legC', urdf_file  # Combinación correcta de directorios
+        package_description, 'hexapodv1', urdf_file  # Combinación correcta de directorios
     )
 
     # Verifica si el archivo URDF existe
@@ -133,7 +133,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     
-  package_description="hexapodLegC_description"
+  package_description="hexapod_description"
 
   #RVIZ Configuration
     rviz_config_dir = 
