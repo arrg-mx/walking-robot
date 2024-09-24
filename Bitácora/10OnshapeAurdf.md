@@ -164,4 +164,16 @@ FINALMENTE Compilamos desde hexapod_ws
 
 >source install/setup.bash
 
->ros2 launch hexapod_description hexapodv1.launch.py 
+>ros2 launch hexapod_description hexapodv1.launch.py
+
+Se abre otra terminal
+
+>source install/setup.bash
+
+>ros2 launch hexapod_description start_rviz.launch.py
+
+se abre otra terminal
+
+>source install/setup.bash
+
+>ros2 run joint_state_publisher_gui joint_state_publisher_gui 
