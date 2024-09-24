@@ -68,6 +68,10 @@ install(
 >pip install numpy==1.24
 
 >ejecutamos dentro de la carpeta de description $ onshape-to-robot legC
+
+Añadimos la siguiente linea en el archivo robot.urdf
+> <?xml version="1.0">
+
 Despues creamos las siguientes carpetas
 
 >touch launch/hexapodv1.launch.py
@@ -138,7 +142,7 @@ LUEGO en el archivo start_rviz.launch
 
     #RVIZ Configuration
     rviz_config_dir = 
-             os.path.join(get_package_share_directory(package_description),'rviz','hexapod.rviz')
+             os.path.join(get_package_share_directory(package_description),'rviz','hexapodv1.rviz')
 
      rviz_node = Node(
         package='rviz2',
