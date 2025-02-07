@@ -17,4 +17,4 @@
 
 > nota:el paquete del scorbot tiene un jupyter notebook llamado reporte examen, que explica mejor todo.
 
-![Scorbot launch](/Bitácora/Imágenes/scorbot_description display launch.png)
+ ![Scorbot_launch](/Bitácora/Imágenes/scorbot_description display launch.png)
