@@ -18,3 +18,6 @@
 > nota:el paquete del scorbot tiene un jupyter notebook llamado reporte examen, que explica mejor todo.
 
  ![Scorbot_launch](/Bitácora/Imágenes/scorbot_description display launch.png)
+
+
+SE HIZO CON EL CONTROLADOR DEL DOFBOT DEL PROFE ERIK
