@@ -21,3 +21,6 @@
 
 
 SE HIZO CON EL CONTROLADOR DEL DOFBOT DEL PROFE ERIK
+
+asegurarse de meter los paquetes dentro de una carpeta src, se hizo la instalacion requerida para los controladores segun el ipynb conceptos basicos dentro del paquete
+
