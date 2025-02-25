@@ -26,3 +26,10 @@ asegurarse de meter los paquetes dentro de una carpeta src, se hizo la instalaci
 
 ROBOT SCARA examen description
 
+
+~ros2 launch examen_bringup roberto_pos_controller_scara.launch.py
+hacer ~source install/setup.bash
+~ros2 run examen_bringup multi_tray.py
+
+
+
