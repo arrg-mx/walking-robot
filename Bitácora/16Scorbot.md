@@ -6,6 +6,7 @@
 4. acceder a la carpeta
 5.  hacer rm build install y log por que ya estaba compilado previamente con otra computadora y las rutas del cmake interfieren, entonces las borramos.
 6.  hacer ~colcon build para crear estas carpeta denuevo y compilar dentro de nuestra ruta.
+   
 7.hacer carpeta world dentro de bringup description ya que marcaba error por que se habia borrado en la importacion por estar vacía
 8. ~source install/setup.bash
    
