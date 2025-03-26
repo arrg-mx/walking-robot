@@ -14,7 +14,7 @@
  
     <link name="link_1">
         <visual>
-            <origin xyz="0.12 0 0" rpy="0 0 0" />
+            <origin xyz="0.04 0 0" rpy="0 0 0" />
             <geometry>
                 <box size="0.083 0.03 0.04" />
             </geometry>
@@ -32,14 +32,14 @@
         <axis xyz="0 0 1"/>
         <limit lower="-3.14159" upper="3.14159" velocity="50.0" 
                effort="1000.0"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.12 0 0" rpy="0 0 0"/>
         
     </joint>
 
 
      <link name="link_2">
         <visual>
-            <origin xyz="0.26 0.0 0.0" rpy="0 0 0" />
+            <origin xyz="0.0975 0 0" rpy="0 0 0" />
             <geometry>
                 <box size="0.195 0.03 0.04" />
             </geometry>
@@ -57,13 +57,13 @@
         <axis xyz="0 1 0"/>
         <limit lower="-3.14159" upper="3.14159" velocity="50.0" 
                effort="1000.0"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.083 0 0" rpy="0 0 0"/>
     </joint>
 
 
      <link name="link_3">
         <visual>
-            <origin xyz="0.419 0.0 0.0" rpy="0 0 0" />
+            <origin xyz="0.061 0.0 0.0" rpy="0 0 0" />
             <geometry>
                 <box size="0.122 0.03 0.04" />
             </geometry>
@@ -82,7 +82,7 @@
         <axis xyz="0 1 0"/>
         <limit lower="-3.14159" upper="3.14159" velocity="50.0" 
                effort="1000.0"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.195 0 0" rpy="0 0 0"/>
     </joint>
 
      
