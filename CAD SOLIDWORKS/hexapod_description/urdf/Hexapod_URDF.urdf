@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="Hexapod_URDF">
+  
+  <link name="world"/>
+  
+  <joint name="base_joint" type="fixed">
+  	<parent link="world"/>
+  	<child link="base_link"/>
+  	<origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.25741 -0.14364 1.0287"
+        rpy="0 0 0" />
+      <mass
+        value="0.40655" />
+      <inertia
+        ixx="0.0014019"
+        ixy="-9.084E-08"
+        ixz="3.2268E-09"
+        iyy="0.0013967"
+        iyz="-4.9043E-09"
+        izz="0.0026076" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="1A_link">
+    <inertial>
+      <origin
+        xyz="0.03152 -0.0009637 0.0010537"
+        rpy="0 0 0" />
+      <mass
+        value="0.02637" />
+      <inertia
+        ixx="3.3312E-06"
+        ixy="1.6141E-07"
+        ixz="7.0361E-07"
+        iyy="9.4272E-06"
+        iyz="-2.6999E-08"
+        izz="9.2519E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/1A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1098 0.1098 0.1098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/1A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1A_joint"
+    type="revolute">
+    <origin
+      xyz="-0.26054 -1.0121 -0.28139"
+      rpy="-1.5708 1.4948 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="1A_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="1B_link">
+    <inertial>
+      <origin
+        xyz="-0.10187 -0.0033409 -0.0039795"
+        rpy="0 0 0" />
+      <mass
+        value="0.039333" />
+      <inertia
+        ixx="6.1006E-06"
+        ixy="-5.0505E-06"
+        ixz="-1.0915E-05"
+        iyy="7.8386E-05"
+        iyz="-1.3547E-06"
+        izz="7.6904E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/1B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/1B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1B_joint"
+    type="revolute">
+    <origin
+      xyz="0.06362 -0.00057714 0.005701"
+      rpy="1.5708 0.84229 3.1325" />
+    <parent
+      link="1A_link" />
+    <child
+      link="1B_link" />
+    <axis
+      xyz="-3.2141E-05 -3.6023E-05 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="1C_link">
+    <inertial>
+      <origin
+        xyz="-0.021327 0.01837 -0.029381"
+        rpy="0 0 0" />
+      <mass
+        value="0.054482" />
+      <inertia
+        ixx="1.312E-05"
+        ixy="1.8239E-07"
+        ixz="-5.3099E-06"
+        iyy="5.9341E-05"
+        iyz="1.3395E-07"
+        izz="6.5197E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/1C_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.64706 0.64706 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/1C_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1C_joint"
+    type="revolute">
+    <origin
+      xyz="-0.16408 -0.0084589 -0.027239"
+      rpy="1.5708 0 2.2612" />
+    <parent
+      link="1B_link" />
+    <child
+      link="1C_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="2A_link">
+    <inertial>
+      <origin
+        xyz="0.03152 -0.00098471 -0.020046"
+        rpy="0 0 0" />
+      <mass
+        value="0.02637" />
+      <inertia
+        ixx="3.3312E-06"
+        ixy="1.6154E-07"
+        ixz="7.0359E-07"
+        iyy="9.4272E-06"
+        iyz="-2.7014E-08"
+        izz="9.2519E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/2A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/2A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2A_joint"
+    type="revolute">
+    <origin
+      xyz="-0.37826 -1.0332 -0.20983"
+      rpy="-1.5708 0.4478 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="2A_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="2B_link">
+    <inertial>
+      <origin
+        xyz="0.10188 0.0033576 -0.0040006"
+        rpy="0 0 0" />
+      <mass
+        value="0.039333" />
+      <inertia
+        ixx="6.1007E-06"
+        ixy="-5.0505E-06"
+        ixz="1.0915E-05"
+        iyy="7.8386E-05"
+        iyz="1.3547E-06"
+        izz="7.6904E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/2B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/2B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2B_joint"
+    type="revolute">
+    <origin
+      xyz="0.063599 -0.00057839 -0.0154"
+      rpy="-1.5708 -1.0606 -0.0090858" />
+    <parent
+      link="2A_link" />
+    <child
+      link="2B_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="2C_link">
+    <inertial>
+      <origin
+        xyz="0.029381 0.018667 0.032322"
+        rpy="0 0 0" />
+      <mass
+        value="0.054482" />
+      <inertia
+        ixx="6.5197E-05"
+        ixy="1.3456E-07"
+        ixz="-5.3099E-06"
+        iyy="5.9341E-05"
+        iyz="1.781E-07"
+        izz="1.312E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/2C_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95686 0.95686 0.95686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/2C_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2C_joint"
+    type="revolute">
+    <origin
+      xyz="0.1711 0 0.0097395"
+      rpy="-1.5708 0 0.6562" />
+    <parent
+      link="2B_link" />
+    <child
+      link="2C_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="3A_link">
+    <inertial>
+      <origin
+        xyz="0.03152 -0.00099274 -0.020046"
+        rpy="0 0 0" />
+      <mass
+        value="0.02637" />
+      <inertia
+        ixx="3.3313E-06"
+        ixy="1.6268E-07"
+        ixz="7.0357E-07"
+        iyy="9.4272E-06"
+        iyz="-2.7144E-08"
+        izz="9.2519E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/3A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/3A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3A_joint"
+    type="revolute">
+    <origin
+      xyz="-0.37491 -1.0332 -0.071745"
+      rpy="-1.5708 -0.6336 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="3A_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="3B_link">
+    <inertial>
+      <origin
+        xyz="0.10188 0.0033575 -0.0039943"
+        rpy="0 0 0" />
+      <mass
+        value="0.039333" />
+      <inertia
+        ixx="6.0999E-06"
+        ixy="-5.0506E-06"
+        ixz="1.0913E-05"
+        iyy="7.8386E-05"
+        iyz="1.3546E-06"
+        izz="7.6904E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/3B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/3B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3B_joint"
+    type="revolute">
+    <origin
+      xyz="0.063599 -0.0005902 -0.0154"
+      rpy="-1.5708 -1.1557 -0.0092768" />
+    <parent
+      link="3A_link" />
+    <child
+      link="3B_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="3C_link">
+    <inertial>
+      <origin
+        xyz="-0.032318 -0.0088673 -0.02938"
+        rpy="0 0 0" />
+      <mass
+        value="0.054482" />
+      <inertia
+        ixx="1.312E-05"
+        ixy="1.8457E-07"
+        ixz="-5.3098E-06"
+        iyy="5.9341E-05"
+        iyz="1.3357E-07"
+        izz="6.5197E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/3C_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.64706 0.64706 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/3C_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3C_joint"
+    type="revolute">
+    <origin
+      xyz="0.1711 0 0"
+      rpy="1.5709 2.2069E-05 -0.76529" />
+    <parent
+      link="3B_link" />
+    <child
+      link="3C_link" />
+    <axis
+      xyz="-3.5866E-05 -1 -9.8204E-05" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="4A_link">
+    <inertial>
+      <origin
+        xyz="0.03152 -0.0009637 0.0010539"
+        rpy="0 0 0" />
+      <mass
+        value="0.02637" />
+      <inertia
+        ixx="3.3312E-06"
+        ixy="1.6141E-07"
+        ixz="7.0358E-07"
+        iyy="9.4272E-06"
+        iyz="-2.6997E-08"
+        izz="9.2519E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/4A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1098 0.1098 0.1098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/4A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4A_joint"
+    type="revolute">
+    <origin
+      xyz="-0.25597 -1.0121 -0.0058865"
+      rpy="-1.5708 -1.5048 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="4A_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="4B_link">
+    <inertial>
+      <origin
+        xyz="0.10188 0.0033584 -0.0039795"
+        rpy="0 0 0" />
+      <mass
+        value="0.039333" />
+      <inertia
+        ixx="6.1006E-06"
+        ixy="-5.0505E-06"
+        ixz="1.0915E-05"
+        iyy="7.8386E-05"
+        iyz="1.3547E-06"
+        izz="7.6904E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/4B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/4B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4B_joint"
+    type="revolute">
+    <origin
+      xyz="0.063599 -0.00057697 0.0057002"
+      rpy="-1.5708 -1.2114 -0.0090776" />
+    <parent
+      link="4A_link" />
+    <child
+      link="4B_link" />
+    <axis
+      xyz="-2.4243E-05 -6.4517E-05 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="4C_link">
+    <inertial>
+      <origin
+        xyz="-0.032319 -0.0088689 -0.029381"
+        rpy="0 0 0" />
+      <mass
+        value="0.054482" />
+      <inertia
+        ixx="1.312E-05"
+        ixy="1.8238E-07"
+        ixz="-5.3099E-06"
+        iyy="5.9341E-05"
+        iyz="1.3395E-07"
+        izz="6.5197E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/4C_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.64706 0.64706 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/4C_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4C_joint"
+    type="revolute">
+    <origin
+      xyz="0.1711 0 0"
+      rpy="1.5708 0 -1.0859" />
+    <parent
+      link="4B_link" />
+    <child
+      link="4C_link" />
+    <axis
+      xyz="4.5821E-05 -1 5.1572E-05" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="5A_link">
+    <inertial>
+      <origin
+        xyz="0.03152 -0.0009616 0.0010537"
+        rpy="0 0 0" />
+      <mass
+        value="0.02637" />
+      <inertia
+        ixx="3.3312E-06"
+        ixy="1.6111E-07"
+        ixz="7.036E-07"
+        iyy="9.4273E-06"
+        iyz="-2.6964E-08"
+        izz="9.2519E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/5A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1098 0.1098 0.1098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/5A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5A_joint"
+    type="revolute">
+    <origin
+      xyz="-0.13639 -1.0121 -0.077838"
+      rpy="1.5708 -0.41482 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="5A_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="5B_link">
+    <inertial>
+      <origin
+        xyz="0.10188 0.0033582 -0.0039742"
+        rpy="0 0 0" />
+      <mass
+        value="0.039333" />
+      <inertia
+        ixx="6.1002E-06"
+        ixy="-5.0506E-06"
+        ixz="1.0914E-05"
+        iyy="7.8386E-05"
+        iyz="1.3547E-06"
+        izz="7.6904E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/5B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.74902 0.74902 0.74902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/5B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5B_joint"
+    type="revolute">
+    <origin
+      xyz="0.063599 -0.0005739 0.0056999"
+      rpy="-1.5708 -1.2548 -0.0090355" />
+    <parent
+      link="5A_link" />
+    <child
+      link="5B_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="5C_link">
+    <inertial>
+      <origin
+        xyz="-0.0051613 0.018339 -0.043373"
+        rpy="0 0 0" />
+      <mass
+        value="0.054482" />
+      <inertia
+        ixx="4.0713E-05"
+        ixy="4.6018E-08"
+        ixz="-2.6529E-05"
+        iyy="5.9341E-05"
+        iyz="2.1778E-07"
+        izz="3.7604E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/5C_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95686 0.95686 0.95686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/5C_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5C_joint"
+    type="revolute">
+    <origin
+      xyz="0.17108 0 -0.027233"
+      rpy="1.5708 0 -0.099064" />
+    <parent
+      link="5B_link" />
+    <child
+      link="5C_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="6A_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/6A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/6A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6A_joint"
+    type="revolute">
+    <origin
+      xyz="-0.13991 -1.0121 -0.21555"
+      rpy="1.5708 0.63278 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="6A_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="6B_link">
+    <inertial>
+      <origin
+        xyz="-0.0033384 0.02039 0.10188"
+        rpy="0 0 0" />
+      <mass
+        value="0.039333" />
+      <inertia
+        ixx="7.8386E-05"
+        ixy="1.3547E-06"
+        ixz="5.0505E-06"
+        iyy="7.6904E-05"
+        iyz="-1.0915E-05"
+        izz="6.1006E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/6B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95686 0.95686 0.95686 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/6B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6B_joint"
+    type="revolute">
+    <origin
+      xyz="0.063769 0.015833 0.005701"
+      rpy="0 0.1431 3.1325" />
+    <parent
+      link="6A_link" />
+    <child
+      link="6B_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="6C_link">
+    <inertial>
+      <origin
+        xyz="-0.021327 0.01837 -0.029381"
+        rpy="0 0 0" />
+      <mass
+        value="0.054482" />
+      <inertia
+        ixx="1.312E-05"
+        ixy="1.8239E-07"
+        ixz="-5.3099E-06"
+        iyy="5.9341E-05"
+        iyz="1.3395E-07"
+        izz="6.5197E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/6C_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.64706 0.64706 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hexapod_URDF/meshes/6C_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6C_joint"
+    type="revolute">
+    <origin
+      xyz="-0.004091 0.04365 0.16091"
+      rpy="3.1416 -1.1872 0" />
+    <parent
+      link="6B_link" />
+    <child
+      link="6C_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  
+  <transmission name="link_1A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="1A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_1A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+
+  <transmission name="link_1B_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="1B_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_1B_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_1C_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="1C_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_1C_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_2A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="2A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_2A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_2B_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="2B_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_2B_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_2C_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="2C_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_2C_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_3A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="3A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_3A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_3B_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="3B_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_3B_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_3C_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="3C_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_3C_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_4A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="4A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_4A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_4B_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="4B_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_4B_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_4C_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="4C_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_4C_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_5A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="5A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_5A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_5B_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="5B_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_5B_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_5C_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="5C_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_5C_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_1A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="1A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_1A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_6A_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="6A_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_6A_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_6B_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="6B_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_6B_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_6C_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="6C_joint">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_6C_motor">
+		<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+		<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <gazebo>
+	<plugin name="control"
+		filename="libgazebo_ros_control.so">
+		<robotNamespace>/</robotNamespace>
+	</plugin>
+  </gazebo>
+  
+
+  <gazebo reference="base_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="1A_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="1B_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="1C_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="2A_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="2B_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="2C_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="3A_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="3B_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="3C_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="4A_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="4B_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="4C_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="5A_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="5B_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="5C_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="6A_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="6B_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="6C_link">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</robot>
