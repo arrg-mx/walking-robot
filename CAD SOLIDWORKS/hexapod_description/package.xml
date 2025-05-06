@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>Hexapod_URDF</name>
+  <name>hexapod_description</name>
   <version>0.0.1</version>
   <description>Hexapod robot URDF package</description>
 
@@ -11,5 +11,6 @@
 
   <exec_depend>xacro</exec_depend>
   <exec_depend>rviz2</exec_depend>
-
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
 </package>
